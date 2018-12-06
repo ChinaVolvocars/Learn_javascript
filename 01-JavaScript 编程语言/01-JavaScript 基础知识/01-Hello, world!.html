@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello, world!</title>
+</head>
+<body>
+
+<p>script 标签之前...</p>
+
+<script>
+  alert('Hello, world!');
+</script>
+
+<p>...script 标签之后</p>
+<script type="text/javascript">
+
+</script>
+
+<!--引入外部js-->
+<!--
+<script src="/path/to/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js"></script>
+<script src="/js/script1.js"></script>
+<script src="/js/script2.js"></script>
+-->
+
+<!--如果设置了src 则 script 标签内容将被忽略-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js">
+  alert(1); // the content is ignored, because src is set
+</script>
+
+<script src="js/alert.js"></script>
+
+<!--
+我们可以使用一个 <script> 标签将 JavaScript 代码添加到页面中。
+type 和 language 属性不是必需的。
+外部的脚本可以通过 <script src="path/to/script.js"></script> 这种方式插入。
+-->
+
+</body>
+</html>
