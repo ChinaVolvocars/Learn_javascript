@@ -32,6 +32,7 @@ ohsU=9ZOd.8i
 
 mysqld --initialize --console
 mysqld --install
+net start mysql
 mysql -uroot -p
 
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';
